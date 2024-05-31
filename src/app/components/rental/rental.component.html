@@ -1,0 +1,19 @@
+<div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis">Rent List</div>
+<table class="table table-success table-striped">
+    <thead>
+        <tr>
+            <th>Rent ID</th>
+            <th>Brand Name</th>
+            <th>Full Name</th>
+            <th>Rent Date</th>
+            <th>Return Date</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let rent of rentalls">
+        <td>{{rent.id}}</td>
+        <td>{{rent.brandName}}</td>
+        <td>{{rent.fullName}}</td>
+        <td>{{rent.rentDate}}</td>
+        <td>{{rent.returnDate}}</td>
+    </tr>
+  </table>
